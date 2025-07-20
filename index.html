@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="newcss.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Current Weather Section -->
+    <section class="current-weather">
+      <div class="location-info">
+        <h1 id="time">12:30 <span id="am-pm">PM</span></h1>
+        <p id="date">Monday, 25 May</p>
+        <p id="time-zone">Asia/Kolkata</p>
+        <p id="country">IN</p>
+      </div>
+
+      <div class="weather-details" id="current-weather-items">
+        <!-- Dynamic weather info will appear here -->
+      </div>
+    </section>
+
+    <!-- Today's Temperature Summary -->
+    <section class="today-summary" id="current-temp">
+      <div class="today-info">
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon" />
+        <div class="temp-details">
+          <h3>Monday</h3>
+          <p>Night - 25.6&#176; C</p>
+          <p>Day - 35.6&#176; C</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Forecast -->
+    <section class="weekly-forecast" id="weather-forecast">
+      <div class="forecast-title"><h2>7-Day Forecast</h2></div>
+      <div class="forecast-grid">
+        <!-- Static items for now, can be made dynamic -->
+        <div class="forecast-item">
+          <p class="day">Mon</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 24.6&#176; C</p>
+          <p>Day - 32.6&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Tue</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 25.6&#176; C</p>
+          <p>Day - 34.6&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Wed</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 23.6&#176; C</p>
+          <p>Day - 35.1&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Thu</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 24.4&#176; C</p>
+          <p>Day - 34.5&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Fri</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 26.1&#176; C</p>
+          <p>Day - 36.0&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Sat</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 25.0&#176; C</p>
+          <p>Day - 35.8&#176; C</p>
+        </div>
+        <div class="forecast-item">
+          <p class="day">Sun</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" class="weather-icon" />
+          <p>Night - 24.5&#176; C</p>
+          <p>Day - 34.9&#176; C</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
